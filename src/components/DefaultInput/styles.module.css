@@ -1,0 +1,24 @@
+.input {
+  color: #ffffff;
+  outline: none;
+  background-color: transparent;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  text-align: center;
+  border: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid var(--primary);
+  transition: 0.1s ease-in-out;
+}
+
+.input:focus {
+  border: 0.2rem solid var(--primary);
+  border-radius: 0.8rem;
+  animation: 5s ease-in-out;
+}
+
+.input::placeholder {
+  color: var(--gray-500);
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
