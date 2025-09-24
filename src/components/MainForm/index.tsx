@@ -1,6 +1,8 @@
 import styles from './styles.module.css';
 import DefaultInput from '../DefaultInput';
 import Cycle from '../Cycles';
+import DefaultButton from '../DefaultButton';
+import { PlayCircleIcon } from 'lucide-react';
 
 export default function MainForm() {
   return (
@@ -11,8 +13,9 @@ export default function MainForm() {
         id='task'
         placeholder='Digite Algo'
       />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Próximo Ciclo é de 25 minutos</p>
       <Cycle />
+      <DefaultButton color='red' icon={ <PlayCircleIcon /> } />
     </div>
   );
 }
