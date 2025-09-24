@@ -7,6 +7,7 @@ import MainForm from './components/MainForm';
 
 import './styles/global.css';
 import './styles/theme.css';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -29,6 +30,9 @@ export default function App() {
         <MainForm />
       </Container>
 
+      <Container>
+        <Footer />
+      </Container>
     </>
   );
 }

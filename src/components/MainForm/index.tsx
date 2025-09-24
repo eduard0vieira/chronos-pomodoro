@@ -15,7 +15,7 @@ export default function MainForm() {
       />
       <p>Próximo Ciclo é de 25 minutos</p>
       <Cycle />
-      <DefaultButton color='red' icon={ <PlayCircleIcon /> } />
+      <DefaultButton color='green' icon={<PlayCircleIcon />} />
     </div>
   );
 }
