@@ -16,11 +16,11 @@ export default function Menu() {
     const storedTheme = (localStorage.getItem('theme') as Theme) || 'dark';
     return storedTheme;
   });
-  
+
   const nextThemeIcon = {
     dark: <SunIcon />,
-    light: <MoonIcon />
-  }
+    light: <MoonIcon />,
+  };
 
   const handleThemeChange = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
