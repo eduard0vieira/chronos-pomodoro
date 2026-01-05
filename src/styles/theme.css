@@ -32,9 +32,22 @@
 
   --text-default: #e6e9f0;
   --text-muted: #aab3cc;
+  --text-title: #e6e9f0;
 
   --disabled: #555f7d;
   --text-disabled: #aab3cc;
+
+  /* Sombras e elevações */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  --shadow-primary: 0 4px 14px 0 rgba(13, 161, 112, 0.3);
+
+  /* Transições */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 200ms ease-in-out;
+  --transition-slow: 300ms ease-in-out;
 }
 
 :root[data-theme='light'] {
@@ -50,7 +63,15 @@
 
   --text-default: #0a0f1a;
   --text-muted: #272f43;
+  --text-title: #0a0f1a;
 
   --link-color: #0b8a60;
   --link-hover: #065f46;
+
+  /* Sombras mais suaves para tema claro */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.15), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.15);
+  --shadow-primary: 0 4px 14px 0 rgba(13, 161, 112, 0.25);
 }

@@ -3,23 +3,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.4rem;
+  gap: 1.6rem;
   font-size: 1.2rem;
   color: var(--text-muted);
+  padding: 2.4rem 1.6rem;
+  margin-top: 4rem;
+  border-top: 1px solid var(--gray-700);
 }
 
 .link {
   text-decoration: none;
-  color: var(--text-muted);
+  color: var(--link-color);
+  font-weight: 500;
+  transition: var(--transition-base);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
 }
 
 .link:hover {
-  text-decoration: underline;
+  color: var(--link-hover);
+  background: var(--gray-800);
+  text-decoration: none;
 }
 
 .github {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 0.4rem;
   color: var(--text-muted);
+  text-align: center;
 }

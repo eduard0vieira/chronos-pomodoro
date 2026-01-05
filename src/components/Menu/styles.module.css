@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.4rem;
-  margin-top: 0.2rem;
+  gap: 1rem;
+  border-radius: 1.2rem;
 }
 
 .menuLink {
@@ -13,20 +13,44 @@
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
-  font-weight: bold;
-  flex-direction: column;
-  background: var(--primary);
-  color: var(--text-over-primary);
-  transition: all 0.4s ease-in-out;
-  padding: 1.2rem;
+  font-weight: 600;
+  background: transparent;
+  color: var(--text-muted);
+  transition: var(--transition-base);
+  padding: 1rem 1.2rem;
   border-radius: 0.8rem;
+  position: relative;
+  background: var(--gray-800);
+  border-radius: 1.2rem;
+  border: 1px solid var(--gray-700);
+  border: 2px solid transparent;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.menuLink:is(button) {
+  border: 2px solid transparent;
 }
 
 .menuLink:hover {
-  filter: brightness(70%);
+  color: var(--text-default);
+  background: var(--gray-700);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.menuLink:active {
+  transform: translateY(0);
 }
 
 .menuLink svg {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
+  transition: var(--transition-base);
+}
+
+.menuLink:hover svg {
+  transform: scale(1.1);
+  color: var(--primary);
 }

@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3.2rem;
 }
 
 .logoLink {
@@ -11,19 +10,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.2rem;
-  font-weight: bold;
+  font-weight: 700;
   flex-direction: column;
   font-size: 4.2rem;
   color: var(--primary);
-  transition: all 0.4s ease-in-out;
+  transition: var(--transition-base);
+  border-radius: 1.2rem;
 }
 
 .logoLink:hover {
-  filter: brightness(80%);
+  color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.logoLink:active {
+  transform: translateY(0);
 }
 
 .logoLink svg {
   width: 6.2rem;
   height: 6.8rem;
+  transition: var(--transition-base);
+  filter: drop-shadow(0 2px 8px rgba(13, 161, 112, 0.3));
+}
+
+.logoLink:hover svg {
+  transform: scale(1.05) rotate(5deg);
+  filter: drop-shadow(0 4px 12px rgba(13, 161, 112, 0.4));
 }

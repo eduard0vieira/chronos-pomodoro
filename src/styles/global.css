@@ -6,6 +6,9 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -13,4 +16,35 @@ body {
   font-size: 1.6rem;
   background: var(--gray-900);
   color: var(--text-default);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Seleção de texto personalizada */
+::selection {
+  background-color: var(--primary);
+  color: var(--text-over-primary);
+}
+
+::-moz-selection {
+  background-color: var(--primary);
+  color: var(--text-over-primary);
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-900);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-600);
+  border-radius: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-500);
 }

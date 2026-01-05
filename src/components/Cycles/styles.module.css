@@ -8,25 +8,59 @@
 
 .cyclesDots {
   display: flex;
-  justify-content: space-between;
-  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1.2rem;
 }
 
 .cyclesDot {
-  width: 2rem;
-  height: 2rem;
-  background-color: var(--primary);
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: var(--gray-600);
   border-radius: 50%;
+  transition: var(--transition-base);
+  cursor: pointer;
+  position: relative;
+  opacity: 0.5;
+}
+
+.cyclesDot::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: inherit;
+  transition: var(--transition-slow);
+}
+
+.cyclesDot:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+
+.cyclesDot:hover::before {
+  width: 2.4rem;
+  height: 2.4rem;
+  opacity: 0.3;
 }
 
 .workTime {
   background-color: var(--warning);
+  box-shadow: 0 0 8px rgba(234, 179, 8, 0.4);
 }
 
 .shortBreakTime {
   background-color: var(--primary);
+  box-shadow: 0 0 8px rgba(13, 161, 112, 0.4);
 }
 
 .longBreakTime {
   background-color: var(--info);
+  box-shadow: 0 0 8px rgba(14, 165, 233, 0.4);
 }
