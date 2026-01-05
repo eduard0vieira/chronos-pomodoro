@@ -1,6 +1,7 @@
 import styles from './styles.module.css';
 
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import {
   HistoryIcon,
   HouseIcon,
@@ -23,7 +24,7 @@ export default function Menu() {
   };
 
   const handleThemeChange = (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ) => {
     event.preventDefault();
     setTheme(prevTheme => {
@@ -39,39 +40,39 @@ export default function Menu() {
 
   return (
     <nav className={styles.menu}>
-      <a
+      <Link
+        to="/"
         className={styles.menuLink}
-        href='/'
         aria-label='Ir para Home'
         title='Ir para Home'
       >
         <HouseIcon />
-      </a>
-      <a
+      </Link>
+      <Link
+        to="/"
         className={styles.menuLink}
-        href='/'
         aria-label='Ir para Histórico'
         title='Ir para Histórico'
       >
         <HistoryIcon />
-      </a>
-      <a
+      </Link>
+      <Link
+        to="/"
         className={styles.menuLink}
-        href='/'
         aria-label='Ir para Configurações'
         title='Ir para Configurações'
       >
         <SettingsIcon />
-      </a>
-      <a
+      </Link>
+      <button
+        type="button"
         className={styles.menuLink}
-        href='#'
-        aria-label='Trocar para Modo Claro'
-        title='Trocar para Modo Claro'
+        aria-label='Trocar tema'
+        title='Trocar tema'
         onClick={handleThemeChange}
       >
         {nextThemeIcon[theme]}
-      </a>
+      </button>
     </nav>
   );
 }

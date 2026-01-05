@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Container from '../../components/Container';
 import MainTemplate from '../../templates/MainTemplate';
 import GenericHtml from '../../components/GenericHtml';
@@ -109,7 +110,7 @@ export default function AboutPomodoro() {
 
           <p>
             <strong>Pronto pra focar?</strong> Bora lá{' '}
-            <a href='/'>voltar para a página inicial</a> e iniciar seus
+            <Link to="/">voltar para a página inicial</Link> e iniciar seus
             Pomodoros! 🍅🚀
           </p>
         </GenericHtml>

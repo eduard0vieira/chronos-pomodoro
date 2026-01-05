@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './styles.module.css';
 
 import MainTemplate from '../../templates/MainTemplate';
@@ -19,7 +20,7 @@ export default function NotFound() {
             </p>
 
             <p>
-              Não se preocupe, você pode voltar para a <a href='/'>home</a> e
+              Não se preocupe, você pode voltar para a <Link to="/">home</Link> e
               continuar sua jornada 🚀
             </p>
           </main>

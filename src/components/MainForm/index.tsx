@@ -7,15 +7,17 @@ import { PlayCircleIcon } from 'lucide-react';
 export default function MainForm() {
   return (
     <div className={styles.container}>
-      <DefaultInput
-        labelText='Task'
-        type='text'
-        id='task'
-        placeholder='Digite Algo'
-      />
-      <p>Próximo Ciclo é de 25 minutos</p>
-      <Cycle />
-      <DefaultButton color='green' icon={<PlayCircleIcon />} />
+      <div className={styles.card}>
+        <DefaultInput
+          labelText='Task'
+          type='text'
+          id='task'
+          placeholder='Digite sua tarefa aqui...'
+        />
+        <p className={styles.nextCycleInfo}>Próximo Ciclo é de 25 minutos</p>
+        <Cycle />
+        <DefaultButton color='green' icon={<PlayCircleIcon />} />
+      </div>
     </div>
   );
 }
